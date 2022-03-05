@@ -1,0 +1,13 @@
+language: python
+
+python:
+    - "3.8"
+
+services:
+    - pip install -r requirements.txt
+
+env:
+    - SECRET_KEY='Test'
+
+script:
+    - python manage.py test
